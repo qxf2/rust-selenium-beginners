@@ -11,4 +11,4 @@ thirtyfour = { version = "0.31.0", features = ["component"] }
 
 
 [[test]]
-name = "02_fill_text"
+name = "09_count_rows"
