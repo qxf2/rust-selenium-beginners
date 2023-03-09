@@ -1,11 +1,16 @@
 /*
-
 Learn to hover over elements using Selenium in Rust
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Chrome driver
+2) Navigate to Qxf2 Tutorial page
+3) Click on Menu icon
+4) Hover over Resource and GUI automation and click on GUI automation link
+5) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 

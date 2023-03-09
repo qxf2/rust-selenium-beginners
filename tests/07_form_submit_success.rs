@@ -1,11 +1,17 @@
 /*
-
 Learn to fill and submit a form with Selenium in Rust
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Chrome driver
+2) Navigate to Qxf2 Tutorial page
+3) Fill all the text field in Example form
+4) Click on Click me! button
+5) Verify user is taken to Selenium Tutorial redirect page
+6) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 

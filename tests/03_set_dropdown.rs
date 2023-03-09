@@ -1,11 +1,15 @@
 /*
-
 Learn to set dropdowns with Selenium in Rust
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Chrome Driver
+2) Navigate to Qxf2 Tutorial page
+3) Set Gender to Male in the Example Form
+4) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 

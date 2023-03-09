@@ -1,11 +1,16 @@
 /*
-
 Check for the presence of absence of page elements
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Chrome driver
+2) Navigate to Qxf2 Tutorial page
+3) Find the Click me! button and click on it
+4) Check for the validation message
+5) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 

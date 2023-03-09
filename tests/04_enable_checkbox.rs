@@ -1,11 +1,15 @@
 /*
-
 Learn to select a checkbox using Selenium in Rust
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Chrome Driver
+2) Navigate to Qxf2 Tutorial page
+3) Find the Checkbox element in the Example form and enable it
+4) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 

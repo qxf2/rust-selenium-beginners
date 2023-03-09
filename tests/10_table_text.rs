@@ -1,11 +1,15 @@
 /*
-
 Learn to parse the text within each cell of a table in Rust
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Chrome driver
+2) Navigate to Qxf2 Tutorial page
+3) Get all the fields from the table
+4) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 

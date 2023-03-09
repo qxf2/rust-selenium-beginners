@@ -1,11 +1,15 @@
 /*
-
 Learn to count the rows in a table using Selenium in Rust
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Chrome driver
+2) Navigate to Qxf2 Tutorial page
+3) Find the no of rows in the Example tabel
+4) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 

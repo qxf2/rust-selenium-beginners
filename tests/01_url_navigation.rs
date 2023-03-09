@@ -1,11 +1,15 @@
 /*
-
 Learn to navigate to a URL using Selenium in Rust
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Firefox Driver
+2) Navigate to Qxf2 Tutorial page
+3) Check the page title
+4) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 

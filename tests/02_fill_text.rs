@@ -1,11 +1,16 @@
 /*
-
 Learn to fill text fields with Selenium in Rust
 DISCLAIMER: This code is aimed at Rust BEGINNERS
 
 AUTHOR: Ajitava Deb
 
- */
+SCOPE:
+1) Launch Chrome Driver
+2) Navigate to Qxf2 Tutorial page
+3) Find elements using id, xpath, xpath without id
+4) Fill name, email and phone no in the respective fields
+5) Close the browser
+*/
 
 use thirtyfour::prelude::*;
 use std::time::Duration;
