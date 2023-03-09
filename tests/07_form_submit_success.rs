@@ -1,3 +1,12 @@
+/*
+
+Learn to fill and submit a form with Selenium in Rust
+DISCLAIMER: This code is aimed at Rust BEGINNERS
+
+AUTHOR: Ajitava Deb
+
+ */
+
 use thirtyfour::prelude::*;
 
 #[tokio::test]

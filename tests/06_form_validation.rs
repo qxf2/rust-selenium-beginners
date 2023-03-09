@@ -1,3 +1,12 @@
+/*
+
+Check for the presence of absence of page elements
+DISCLAIMER: This code is aimed at Rust BEGINNERS
+
+AUTHOR: Ajitava Deb
+
+ */
+
 use thirtyfour::prelude::*;
 
 #[tokio::test]

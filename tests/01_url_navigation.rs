@@ -1,3 +1,12 @@
+/*
+
+Learn to navigate to a URL using Selenium in Rust
+DISCLAIMER: This code is aimed at Rust BEGINNERS
+
+AUTHOR: Ajitava Deb
+
+ */
+
 use thirtyfour::prelude::*;
 
 #[tokio::test]

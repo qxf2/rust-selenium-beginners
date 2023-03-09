@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 thirtyfour = { version = "0.31.0", features = ["component"] }
+scraper = "0.15.0"
 
 
 [[test]]

@@ -1,3 +1,12 @@
+/*
+
+Learn to hover over elements using Selenium in Rust
+DISCLAIMER: This code is aimed at Rust BEGINNERS
+
+AUTHOR: Ajitava Deb
+
+ */
+
 use thirtyfour::prelude::*;
 
 #[tokio::test]

@@ -1,3 +1,12 @@
+/*
+
+Learn to fill text fields with Selenium in Rust
+DISCLAIMER: This code is aimed at Rust BEGINNERS
+
+AUTHOR: Ajitava Deb
+
+ */
+
 use thirtyfour::prelude::*;
 use std::time::Duration;
 use tokio::time::sleep;
