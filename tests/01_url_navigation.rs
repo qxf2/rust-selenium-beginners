@@ -5,7 +5,7 @@ DISCLAIMER: This code is aimed at Rust BEGINNERS. This is not how Qxf2 engineers
 AUTHOR: Ajitava Deb
 
 SCOPE:
-1) Launch Firefox Driver
+1) Launch Chrome Driver
 2) Navigate to Qxf2 Tutorial page
 3) Check the page title
 4) Close the browser
