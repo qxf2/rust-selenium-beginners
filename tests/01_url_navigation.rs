@@ -15,23 +15,32 @@ use thirtyfour::prelude::*;
 
 #[tokio::test]
 async fn navigate_to_url() -> WebDriverResult<()> {
-    let caps = DesiredCapabilities::chrome();
+    let capabilities = DesiredCapabilities::chrome();
 
     //Create an instance of WebDriver
-    let driver = WebDriver::new("http://localhost:9515", caps)
+    let driver = WebDriver::new("http://localhost:9515", capabilities)
                             .await
-                            .expect("Please create a instance of WebDriver");
+                            .expect("Failed to connect to localhost:9515. Have you started the WebDriver process in another terminal?");
 
     //KEY POINT: The driver.goto method will navigate to a page given by the URL
-    driver.goto("http://qxf2.com/selenium-tutorial-main")
-                            .await
-                            .expect("Couldn't navigate to the URL");
+    driver
+        .goto("http://qxf2.com/selenium-tutorial-main")
+        .await
+        .expect("Couldn't navigate to the URL");
+
+    //Storing the Page title
+    let page_title = driver.title()
+        .await
+        .expect("Page title not found");
+
+    //Quit the browser window
+    driver.quit().await?;
 
     //Check if the title of the page is proper
-    assert_eq!(driver.title().await?, "Qxf2 Services: Selenium training main");  
+    assert_eq!(
+        page_title,
+        "Qxf2 Services: Selenium training main"
+    );
 
-    //Quit the browser window 
-    driver.quit().await?;
-    
     Ok(())
 }

@@ -15,40 +15,42 @@ use thirtyfour::prelude::*;
 
 #[tokio::test]
 async fn set_dropdown() -> WebDriverResult<()> {
-    let caps = DesiredCapabilities::chrome();
+    let capabilities = DesiredCapabilities::chrome();
 
     //Create an instance of WebDriver
-    let driver = WebDriver::new("http://localhost:9515", caps)
+    let driver = WebDriver::new("http://localhost:9515", capabilities)
                             .await
-                            .expect("Please create a instance of WebDriver");
+                            .expect("Failed to connect to localhost:9515. Have you started the WebDriver process in another terminal?");
 
     //KEY POINT: The driver.goto method will navigate to a page given by the URL
-    driver.goto("http://qxf2.com/selenium-tutorial-main")
-                            .await
-                            .expect("Couldn't navigate to the URL");
+    driver
+        .goto("http://qxf2.com/selenium-tutorial-main")
+        .await
+        .expect("Couldn't navigate to the URL");
 
     //Maximize the browser window
     driver.maximize_window().await?;
 
     //KEY POINT: Identify the dropdown and click on it
-    let dropdown_element = driver.find(By::Css("button[type='button']"))
-                            .await
-                            .expect("Drop down not found");
-    dropdown_element.click()
-                            .await
-                            .expect("Unable to click the dropdown");
+    //We are purposefully not showing assert here. We will show how to assert in later tests.
+    let dropdown_element = driver
+        .find(By::Css("button[type='button']"))
+        .await
+        .expect("Drop down not found");
+    dropdown_element
+        .click()
+        .await
+        .expect("Unable to click the dropdown");
 
     //KEY POINT: Locate a particular option and click on it
-    let option = driver.find(By::XPath("//a[text()='Male']"))
-                            .await
-                            .expect("Not able to locate a option");
-    option.click()
-                            .await
-                            .expect("Unable to click the option");
+    let option = driver
+        .find(By::XPath("//a[text()='Male']"))
+        .await
+        .expect("Not able to locate a option");
+    option.click().await.expect("Unable to click the option");
 
     //Close the browser window
     driver.quit().await?;
-    
-    Ok(())
 
+    Ok(())
 }
