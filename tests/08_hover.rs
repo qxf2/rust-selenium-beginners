@@ -63,8 +63,16 @@ async fn hover() -> WebDriverResult<()> {
         .await
         .expect("The gui automation link was not clicked");
 
+    let current_url = driver
+        .current_url()
+        .await
+        .expect("Failed to get current URL");
+
     //Close the browser window
     driver.quit().await?;
+
+    //Assert that the URL has changed to the GUI automation page
+    assert_eq!(current_url.as_str(), "https://qxf2.com/gui-automation-diy");
 
     Ok(())
 }

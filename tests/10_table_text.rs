@@ -70,5 +70,11 @@ async fn table_text() -> WebDriverResult<()> {
     //# Print the result list
     println!("{:?}", my_table);
 
+    //Quit the browser window
+    driver.quit().await?;    
+
+    //Assert the table length
+    assert_eq!(my_table.len(), 3);
+
     Ok(())
 }

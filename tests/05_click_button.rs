@@ -47,7 +47,7 @@ async fn click_button() -> WebDriverResult<()> {
     //Close the browser window
     driver.quit().await?;
 
-    //Shows how to assert on button text.
+    //Assert the button title
     assert_eq!(
         button_title,
         "Click me!"

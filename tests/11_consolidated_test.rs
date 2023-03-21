@@ -148,10 +148,12 @@ async fn table_text() -> WebDriverResult<()> {
         .current_url()
         .await
         .expect("Unable to fetch the current url");
-    assert_eq!(url.as_str(), "https://qxf2.com/selenium-tutorial-redirect");
 
     //Quit the browser window
     driver.quit().await?;
+
+    //Assert the Qxf2 tutorial redirect url
+    assert_eq!(url.as_str(), "https://qxf2.com/selenium-tutorial-redirect");
 
     Ok(())
 }

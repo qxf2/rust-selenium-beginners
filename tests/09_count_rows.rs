@@ -42,10 +42,12 @@ async fn count_rows() -> WebDriverResult<()> {
         .find(By::XPath("//tbody/descendant::tr"))
         .await
         .expect("Couldn't find the row elements in the table");
-    println!("Total No of Rows: {:?}", rows.to_string().len());
 
     //Close the browser window
     driver.quit().await?;
+
+    //Assert the row length
+    assert_eq!(rows.to_string().len(), 296);
 
     Ok(())
 }
