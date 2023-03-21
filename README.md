@@ -19,7 +19,7 @@ Selenium lets you control the browser through a script. Selenium lets you intera
         
 - Open another terminal and run the following to run individual test
         
-        cargo test --test 01_url_navigation
+        cargo test --test 11_consolidated_test
         
 - To run all the tests sequentially, run the following
         
