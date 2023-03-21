@@ -11,13 +11,12 @@ Selenium lets you control the browser through a script. Selenium lets you intera
 
   **Note1:** The folder structure contains tests and all tests are present within it because these are integration tests.
   **Note2:** When you run the tests for first time, it will take sometime(~5min) to build and run it. From next time, tests would run in a jiffy.
-  **Note3:** Before running the tests, navigate to the source directory containing the .toml file
   
 - Open a terminal and run the driver with the following command
 
         chromedriver
         
-- Open another terminal and run the following to run individual test
+- Open another terminal, navigate to the source directory containing the .toml file and run the following to run individual test
         
         cargo test --test 11_consolidated_test
         
