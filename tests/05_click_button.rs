@@ -11,7 +11,7 @@ SCOPE:
 4) Close the driver
 */
 
-use thirtyfour::prelude::*;
+use thirtyfour::prelude::{By,DesiredCapabilities,WebDriver,WebDriverResult};
 
 #[tokio::test]
 async fn click_button() -> WebDriverResult<()> {

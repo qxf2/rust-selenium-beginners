@@ -13,7 +13,7 @@ SCOPE:
 6) Close the browser
 */
 
-use thirtyfour::prelude::*;
+use thirtyfour::prelude::{By,DesiredCapabilities,WebDriver,WebDriverResult};
 
 #[tokio::test]
 async fn form_submit_success() -> WebDriverResult<()> {

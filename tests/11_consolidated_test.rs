@@ -18,7 +18,7 @@ SCOPE:
 9) Close the browser
 */
 
-use thirtyfour::prelude::*;
+use thirtyfour::prelude::{By,DesiredCapabilities,WebDriver,WebDriverResult};
 
 #[tokio::test]
 async fn table_text() -> WebDriverResult<()> {

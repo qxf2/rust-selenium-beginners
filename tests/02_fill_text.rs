@@ -5,7 +5,7 @@ DISCLAIMER: This code is aimed at Rust BEGINNERS. This is not how Qxf2 engineers
 AUTHOR: Ajitava Deb
 
 SCOPE:
-1) Launch Chrome Driver
+1) Launch Firefox Driver
 2) Navigate to Qxf2 Tutorial page
 3) Find elements using id, xpath, xpath without id
 4) Fill name, email and phone no in the respective fields
@@ -13,12 +13,12 @@ SCOPE:
 */
 
 use std::time::Duration;
-use thirtyfour::prelude::*;
+use thirtyfour::prelude::{By,DesiredCapabilities,WebDriver,WebDriverResult};
 use tokio::time::sleep;
 
 #[tokio::test]
 async fn fill_text() -> WebDriverResult<()> {
-    let capabilities = DesiredCapabilities::chrome();
+    let capabilities = DesiredCapabilities::firefox();
 
     //Create an instance of WebDriver
     let driver = WebDriver::new("http://localhost:9515", capabilities)
