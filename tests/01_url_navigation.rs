@@ -11,7 +11,6 @@ SCOPE:
 4) Close the browser
 */
 
-//use thirtyfour::prelude::*;
 use thirtyfour::prelude::{DesiredCapabilities,WebDriver,WebDriverResult};
 
 #[tokio::test]
