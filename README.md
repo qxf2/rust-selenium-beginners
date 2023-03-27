@@ -15,6 +15,10 @@ Selenium lets you control the browser through a script. Selenium lets you intera
 - Open a terminal and run the driver with the following command
 
         chromedriver
+
+- If you are running in Mozilla than open a terminal and run the driver with the following command
+
+        geckodriver --port 9515
         
 - Open another terminal, navigate to the source directory containing the .toml file and run the following to run individual test
         
